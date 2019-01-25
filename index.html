@@ -1,0 +1,20 @@
+<head>
+    <title>Life</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div>
+        Generation Speed: <input type="range" min="-750" max="-15" value="15" id="timeSlider">
+        <span></span>
+    </div>
+    <span id="genCount" style="display:inline-block; width:175px;">
+        Generation: 0                 
+    </span>
+    <button id="pauseButton" type="button" value="go" onclick="pauseToggle(this)">Pause</button>
+    <div>
+        <canvas id="theCanvas" width="1000" height="900" style="border:1px solid #000000;">
+            <script src="scriptin.js"></script>
+        </canvas>
+    </div>
+</body>
